@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+}
+
+.container{
+  position: relative;
+  max-width: 800px;
+  padding: 10px;
+  margin:0 auto;
+}
+
+.addtask{
+  width:100%;
+  display: flex;
+  padding:10px;
+  margin-bottom: 10px;
+}
+.addtask > input[type="text"]{
+  width:90%;
+  border:none;
+  border-bottom: 2px solid black;
+  background: none;
+  padding: 10px;
+  font-size: 22px;
+  outline:none;
+}
+.addtask button{
+  margin: 0 10px;
+  text-transform: uppercase;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: #000;
+  color:#fff;
+  border-radius:5px;
+}
+.notcompleted, .completed{
+  margin:5px 0;
+  padding:10px;
+}
+h3{
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
