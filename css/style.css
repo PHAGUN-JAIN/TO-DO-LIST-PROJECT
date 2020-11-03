@@ -51,6 +51,7 @@ h3{
 }
 ol{
   list-style: none;
+  counter-reset: my-counter;
 }
 ol li{
   width:100%;
