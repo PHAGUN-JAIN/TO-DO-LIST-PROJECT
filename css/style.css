@@ -49,3 +49,33 @@ h3{
   text-transform: uppercase;
   text-align: center;
 }
+ol{
+  list-style: none;
+  counter-reset: my-counter;
+}
+ol li{
+  width:100%;
+  padding: 15px;
+  margin: 5px 0;
+  counter-increment: my-counter;
+}
+ol li::before{
+  content: counter(my-counter);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2rem;
+  text-align: center;
+}
+li button{
+  float:right;
+  padding: 5px;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+}
